@@ -1,8 +1,18 @@
+# General ignores for safety
 *.pid
 *.xml
 *.csr
 *.crt
 *.key
+*.conf
+
+# Dotfiles
+.*
+!/.gitignore
+!/.travis.yml
+!/.HA_VERSION
+
+# HA specific
 www
 home-assistant.log
 home-assistant_v2.db
@@ -12,19 +22,16 @@ deps
 tts
 secrets.yaml
 known_devices.yaml
-*.conf
+ip_bans.yaml
+
+# 3rd party
 plex.conf
 phue.conf
 nest.conf
 harmony_media_room.conf
-.*
-!/.gitignore
-!/.travis.yml
 html5_push_registrations.conf
-ip_bans.yaml
 /icloud/*
 
 # Zwave
 pyozw.sqlite
 OZW_Log.txt
-zw*.xml
