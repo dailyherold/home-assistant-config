@@ -22,3 +22,12 @@ media_player.marantz_nr1604:
   friendly_name: Livingroom Receiver
   icon: mdi:speaker
 
+zwave.ge_14294_inwall_smart_dimmer:
+  friendly_name: Dining Room Dimmer
+
+light.ge_14294_inwall_smart_dimmer_level:
+  friendly_name: Dining Room Light
+  icon: mdi:ceiling-light
+
+light.bedroom_beacon:
+  icon: mdi:alarm-light
