@@ -34,7 +34,7 @@
   trigger:
     platform: state
     entity_id: light.bedroom_beacon
-    state: 'on'
+    to: 'on'
     for:
       minutes: 2
   action:
