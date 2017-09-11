@@ -45,15 +45,15 @@ automation: !include_dir_merge_list automation
 
 zone:
   name: Work (Stephanie)
-  latitude: !secret work.steph.latitude
-  longitude: !secret work.steph.longitude
+  latitude: !secret work_steph_latitude
+  longitude: !secret work_steph_longitude
   radius: 75
   icon: mdi:domain
 
 zone 2:
   name: Work (John Paul)
-  latitude: !secret work.jp.latitude
-  longitude: !secret work.jp.longitude
+  latitude: !secret work_jp_latitude
+  longitude: !secret work_jp_longitude
   radius: 65
   icon: mdi:domain
 
@@ -87,8 +87,8 @@ mqtt:
   broker: 127.0.0.1
   port: 1883
   client_id: home-assistant-1
-  username: !secret mqtt.username
-  password: !secret mqtt.password
+  username: !secret mqtt_username
+  password: !secret mqtt_password
 
 device_tracker owntracks:
   platform: owntracks
@@ -102,6 +102,6 @@ media_player:
     host: 192.168.2.185
 
 nest:
-  client_id: !secret nest.client_id
-  client_secret: !secret nest.client_secret
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
 
