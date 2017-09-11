@@ -1,0 +1,107 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret home_elevation
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Chicago
+  customize: !include customized.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret api_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+  login_attempts_threshold: 3
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+###  Automation  ###
+automation: !include_dir_merge_list automation
+
+zone:
+  name: Work (Stephanie)
+  latitude: !secret work.steph.latitude
+  longitude: !secret work.steph.longitude
+  radius: 75
+  icon: mdi:domain
+
+zone 2:
+  name: Work (John Paul)
+  latitude: !secret work.jp.latitude
+  longitude: !secret work.jp.longitude
+  radius: 65
+  icon: mdi:domain
+
+# This will override the default home zone
+zone 3:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  radius: 100
+  icon: mdi:home
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  platform: yr
+  monitored_conditions:
+    - temperature
+    - symbol
+    - precipitation
+    - windSpeed
+    - humidity
+
+# Text to speech
+tts:
+  platform: google
+
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret mqtt.username
+  password: !secret mqtt.password
+
+device_tracker owntracks:
+  platform: owntracks
+
+light:
+  - platform: lifx
+    broadcast: 192.168.2.255
+
+media_player:
+  - platform: denon
+    host: 192.168.2.185
+
+nest:
+  client_id: !secret nest.client_id
+  client_secret: !secret nest.client_secret
+

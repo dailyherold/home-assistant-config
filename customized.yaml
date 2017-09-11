@@ -1,0 +1,24 @@
+media_player.tarzans_quarters:
+  friendly_name: Bedroom Roku
+  icon: mdi:movie
+
+media_player.tarzans_quarters_2:
+  friendly_name: Bedroom Chromecast
+  icon: mdi:google-chrome
+
+media_player.bedroom_home:
+  friendly_name: Google Home
+  icon: mdi:google
+
+media_player.living_room:
+  friendly_name: Livingroom Roku
+  icon: mdi:movie
+
+media_player.living_room_2:
+  friendly_name: Livingroom Chromecast
+  icon: mdi:google-chrome
+
+media_player.marantz_nr1604:
+  friendly_name: Livingroom Receiver
+  icon: mdi:speaker
+

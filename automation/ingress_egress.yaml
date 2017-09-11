@@ -1,0 +1,42 @@
+- alias: "Stephanie Arriving"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.devices_iphone6s
+    from: 'not_home'
+    to: 'home'
+  action:
+    service: light.turn_on
+    entity_id: light.bedroom_beacon
+    data:
+      brightness: 17
+      rgb_color: [7,0,6]
+
+- alias: "John Paul Arriving"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.devices_nexus5x
+    from: 'not_home'
+    to: 'home'
+  action:
+    service: light.turn_on
+    entity_id: light.bedroom_beacon
+    data:
+      brightness: 17
+      rgb_color: [9,0,25]
+
+- alias: "Clear Beacon"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: light.bedroom_beacon
+    state: 'on'
+    for:
+      minutes: 2
+  action:
+    service: light.turn_off
+    entity_id: light.bedroom_beacon
