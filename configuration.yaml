@@ -82,6 +82,8 @@ sensor:
 tts:
   platform: google
 
+zwave:
+  usb_path: /dev/ttyACM0
 
 mqtt:
   broker: 127.0.0.1
