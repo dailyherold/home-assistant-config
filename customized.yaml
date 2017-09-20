@@ -28,6 +28,26 @@ zwave.ge_14294_inwall_smart_dimmer:
 light.ge_14294_inwall_smart_dimmer_level:
   friendly_name: Dining Room Light
   icon: mdi:ceiling-light
+  emulated_hue: true
+  emulated_hue_name: "dining room light"
 
 light.bedroom_beacon:
   icon: mdi:alarm-light
+
+switch.bedroomlight:
+  friendly_name: Bedroom Bookshelf Light
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "bedroom light"
+
+group.all_lights:
+  friendly_name: All Lights
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "all lights"
+
+group.all_switches:
+  friendly_name: All Switches
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "all switches"
