@@ -31,6 +31,18 @@ light.ge_14294_inwall_smart_dimmer_level:
   emulated_hue: true
   emulated_hue_name: "dining room light"
 
+light.ge_unknown_type4c42_id3031_level:
+  friendly_name: His Bedside Light
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "his bedside light"
+
+light.ge_unknown_type4c42_id3031_level_2:
+  friendly_name: Her Bedside Light
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "her bedside light"
+
 light.bedroom_beacon:
   icon: mdi:alarm-light
 
