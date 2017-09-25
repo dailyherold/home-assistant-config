@@ -64,12 +64,12 @@ group.all_switches:
   emulated_hue: true
   emulated_hue_name: "all switches"
 
-group.master_bedroom_bedside_lights
+group.master_bedroom_bedside_lights:
   icon: mdi:lightbulb
   emulated_hue: true
   emulated_hue_name: "bedside lights"
 
-group.master_bedroom_lights
+group.master_bedroom_lights:
   icon: mdi:lightbulb
   emulated_hue: true
   emulated_hue_name: "bedroom lights"
