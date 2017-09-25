@@ -50,7 +50,7 @@ switch.bedroomlight:
   friendly_name: Bedroom Bookshelf Light
   icon: mdi:lightbulb
   emulated_hue: true
-  emulated_hue_name: "bedroom light"
+  emulated_hue_name: "bookshelf light"
 
 group.all_lights:
   friendly_name: All Lights
@@ -63,3 +63,13 @@ group.all_switches:
   icon: mdi:lightbulb
   emulated_hue: true
   emulated_hue_name: "all switches"
+
+group.master_bedroom_bedside_lights
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "bedside lights"
+
+group.master_bedroom_lights
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "bedroom lights"

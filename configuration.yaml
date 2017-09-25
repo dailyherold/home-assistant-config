@@ -43,6 +43,9 @@ logbook:
 ###  Automation  ###
 automation: !include_dir_merge_list automation
 
+###  Groups  ###
+group: !include groups.yaml
+
 zone:
   name: Work (Stephanie)
   latitude: !secret work_steph_latitude
