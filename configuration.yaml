@@ -71,6 +71,10 @@ zone 3:
 # Track the sun
 sun:
 
+# Track the moon
+sensor:
+  platform: moon
+
 # Weather Prediction
 sensor:
   platform: yr
