@@ -87,7 +87,6 @@ sensor:
     - apparent_temperature
     - humidity
     - wind_speed
-    - uv_index
     - precip_type
     - precip_intensity
     - precip_probability
