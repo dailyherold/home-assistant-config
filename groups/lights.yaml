@@ -1,11 +1,11 @@
 master_bedroom_bedside_lights:
-  name: Master Bedroom Bedside Lights
+  name: Bedroom Bedside Lights
   entities:
     - light.ge_unknown_type4c42_id3031_level
     - light.ge_unknown_type4c42_id3031_level_2
 
 master_bedroom_lights:
-  name: Master Bedroom Lights
+  name: Bedroom Lights
   entities:
     - light.ge_unknown_type4c42_id3031_level
     - light.ge_unknown_type4c42_id3031_level_2

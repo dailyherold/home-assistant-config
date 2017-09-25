@@ -1,0 +1,5 @@
+master_bedroom_media:
+  name: Bedroom Media
+  entities:
+    - media_player.tarzans_quarters
+    - media_player.tarzans_quarters_2

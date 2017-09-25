@@ -1,0 +1,14 @@
+home-test:
+  name: Home
+  view: yes
+  icon: mdi:home-assistant
+  entities:
+    - group.nest
+    - group.family
+
+bedroom:
+  name: Bedroom
+  view: yes
+  entities:
+    - group.master_bedroom_lights
+    - group.master_bedroom_media
