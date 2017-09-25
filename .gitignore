@@ -5,6 +5,7 @@
 *.crt
 *.key
 *.conf
+*.json
 
 # Dotfiles
 .*
