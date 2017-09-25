@@ -1,6 +1,6 @@
 nest:
   name: Nest
-  icon: air-conditioner
+  icon: mdi:air-conditioner
   entities:
     - binary_sensor.thermostat_thermostat_fan
     - binary_sensor.thermostat_thermostat_has_leaf
