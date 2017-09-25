@@ -77,13 +77,20 @@ sensor:
 
 # Weather Prediction
 sensor:
-  platform: yr
+  platform: darksky
+  api_key: !secret darksky_api_key
+  forecase: 7
   monitored_conditions:
+    - summary
+    - hourly_summary
     - temperature
-    - symbol
-    - precipitation
-    - windSpeed
+    - apparent_temperature
     - humidity
+    - wind_speed
+    - uv_index
+    - precip_type
+    - precip_intensity
+    - precip_probability
 
 # Text to speech
 tts:
