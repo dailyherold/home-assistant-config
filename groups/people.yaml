@@ -1,0 +1,5 @@
+family:
+  name: Family
+  entities:
+    - device_tracker.devices_iphone6s
+    - device_tracker.devices_nexus5x

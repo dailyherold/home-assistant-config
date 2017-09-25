@@ -1,0 +1,15 @@
+nest:
+  name: Nest
+  icon: air-conditioner
+  entities:
+    - binary_sensor.thermostat_thermostat_fan
+    - binary_sensor.thermostat_thermostat_has_leaf
+    - binary_sensor.thermostat_thermostat_is_locked
+    - binary_sensor.thermostat_thermostat_is_using_emergency_heat
+    - binary_sensor.thermostat_thermostat_online
+    - climate.thermostat
+    - sensor.thermostat_thermostat_humidity
+    - sensor.thermostat_thermostat_hvac_state
+    - sensor.thermostat_thermostat_operation_mode
+    - sensor.thermostat_thermostat_target
+    - sensor.thermostat_thermostat_temperature
