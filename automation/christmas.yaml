@@ -3,7 +3,7 @@
   hide_entity: False
   trigger:
     platform: sun
-    after: sunset
+    event: sunset
   action:
     service: homeassistant.turn_on
     entity_id: group.christmas_lights
@@ -13,8 +13,8 @@
   hide_entity: False
   trigger:
     platform: sun
-    before: sunrise
-    before_offset: "-01:00:00"
+    event: sunrise
+    offset: "-01:00:00"
   action:
     service: homeassistant.turn_on
     entity_id: group.christmas_lights
