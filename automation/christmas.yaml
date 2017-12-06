@@ -1,0 +1,35 @@
+- alias: "Christmas Lights On At Sunset"
+  initial_state: False
+  hide_entity: False
+  trigger:
+    platform: sun
+    after: sunset
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.christmas_lights
+    
+- alias: "Christmas Lights On At Sunrise"
+  initial_state: False
+  hide_entity: False
+  trigger:
+    platform: sun
+    before: sunrise
+    before_offset: "-01:00:00"
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.christmas_lights
+
+- alias: "Turn off Christmas Lights When Gone"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.devices_iphone6s, device_tracker.devices_nexus5x
+    from: 'home'
+    to: 'not_home'
+    for:
+      minutes: 10
+  action:
+    service: homeassistant.turn_off
+    entity_id: group.christmas_lights
+
