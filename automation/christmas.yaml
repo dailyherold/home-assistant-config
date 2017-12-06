@@ -1,5 +1,5 @@
 - alias: "Christmas Lights On At Sunset"
-  initial_state: False
+  initial_state: True
   hide_entity: False
   trigger:
     platform: sun
@@ -9,7 +9,7 @@
     entity_id: group.christmas_lights
     
 - alias: "Christmas Lights On At Sunrise"
-  initial_state: False
+  initial_state: True
   hide_entity: False
   trigger:
     platform: sun
