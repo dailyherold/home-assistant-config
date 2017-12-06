@@ -33,3 +33,13 @@
     service: homeassistant.turn_off
     entity_id: group.christmas_lights
 
+- alias: "Turn off Christmas Lights When Asleep"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '01:00:00'
+  action:
+    service: homeassistant.turn_off
+    entity_id: group.christmas_lights
+
