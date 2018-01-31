@@ -53,18 +53,12 @@ light.bedroom_beacon:
   icon: mdi:alarm-light
 
 light.ge_unknown_type5044_id3038_level:
-  friendly_name: Bar Cart Lights
-  icon: mdi:pine-tree
+  friendly_name: Guest Bedroom Light
+  icon: mdi:lightbulb
   emulated_hue: true
-  emulated_hue_name: "bar cart lights"
+  emulated_hue_name: "guest bedroom light"
 
 switch.ge_unknown_type5052_id3038_switch:
-  friendly_name: Christmas Tree Lights
-  icon: mdi:pine-tree
-  emulated_hue: true
-  emulated_hue_name: "christmas tree lights"
-
-switch.bedroomlight:
   friendly_name: Bedroom Bookshelf Light
   icon: mdi:lightbulb
   emulated_hue: true
@@ -92,7 +86,12 @@ group.master_bedroom_lights:
   emulated_hue: true
   emulated_hue_name: "bedroom lights"
 
-group.christmas_lights:
-  icon: mdi:pine-tree
+group.guest_bedroom_lights:
+  icon: mdi:lightbulb
   emulated_hue: true
-  emulated_hue_name: "christmas lights"
+  emulated_hue_name: "guest bedroom lights"
+
+#group.christmas_lights:
+#  icon: mdi:pine-tree
+#  emulated_hue: true
+#  emulated_hue_name: "christmas lights"
