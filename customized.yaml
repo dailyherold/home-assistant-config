@@ -23,13 +23,13 @@ media_player.marantz_nr1604:
   icon: mdi:speaker
 
 zwave.ge_14294_inwall_smart_dimmer:
-  friendly_name: Dining Room Dimmer
+  friendly_name: GE ZW3005 In-Wall Dimmer
 
 zwave.ge_unknown_type5044_id3038:
-  friendly_name: Bar Cart Lights
+  friendly_name: GE ZW3104 Plug-in Dimmer
 
 zwave.ge_unknown_type5052_id3038:
-  friendly_name: Christmas Tree Lights
+  friendly_name: GE ZW4103 Plug-in Switch
 
 light.ge_14294_inwall_smart_dimmer_level:
   friendly_name: Dining Room Light
