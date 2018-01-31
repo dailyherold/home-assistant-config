@@ -9,10 +9,15 @@ master_bedroom_lights:
   entities:
     - light.ge_unknown_type4c42_id3031_level
     - light.ge_unknown_type4c42_id3031_level_2
-    - switch.bedroomlight
+    - switch.ge_unknown_type5052_id3038_switch
 
-christmas_lights:
-  name: Christmas Lights
+guest_bedroom_lights:
+  name: Guest Bedroom Lights
   entities:
     - light.ge_unknown_type5044_id3038_level
-    - switch.ge_unknown_type5052_id3038_switch
+
+#christmas_lights:
+#  name: Christmas Lights
+#  entities:
+#    - light.ge_unknown_type5044_id3038_level
+#    - switch.ge_unknown_type5052_id3038_switch
