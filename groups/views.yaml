@@ -12,3 +12,9 @@ bedroom:
   entities:
     - group.master_bedroom_lights
     - group.master_bedroom_media
+
+guest-bedroom:
+  name: Guest Bedroom
+  view: yes
+  entities:
+    - group.guest_bedroom_lights
