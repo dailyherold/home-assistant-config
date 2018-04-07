@@ -120,6 +120,14 @@ device_tracker owntracks:
 light:
   - platform: lifx
     broadcast: 192.168.2.255
+  - platform: limitlessled
+    bridges:
+      - host: 192.168.2.247
+        groups:
+          - number: 1
+            name: Desk Bias Lighting
+            type: rgbww
+            fade: on
 
 media_player:
   - platform: denon
