@@ -15,6 +15,7 @@ guest_bedroom_lights:
   name: Guest Bedroom Lights
   entities:
     - light.ge_unknown_type5044_id3038_level
+    - light.led_strip_rgb_cct_1
 
 #christmas_lights:
 #  name: Christmas Lights

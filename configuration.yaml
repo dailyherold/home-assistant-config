@@ -125,7 +125,7 @@ light:
       - host: 192.168.2.247
         groups:
           - number: 1
-            name: Desk Bias Lighting
+            name: led_strip_rgb_cct_1
             type: rgbww
             fade: on
 

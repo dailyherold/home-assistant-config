@@ -58,6 +58,12 @@ light.ge_unknown_type5044_id3038_level:
   emulated_hue: true
   emulated_hue_name: "guest bedroom light"
 
+light.led_strip_rgb_cct_1:
+  friendly_name: Desk Bias Light
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: "desk bias light"
+
 switch.ge_unknown_type5052_id3038_switch:
   friendly_name: Bedroom Bookshelf Light
   icon: mdi:lightbulb
