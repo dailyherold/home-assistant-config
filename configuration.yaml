@@ -57,7 +57,7 @@ zone 2:
   name: Work (John Paul)
   latitude: !secret work_jp_latitude
   longitude: !secret work_jp_longitude
-  radius: 65
+  radius: 325 
   icon: mdi:domain
 
 # This will override the default home zone
@@ -122,7 +122,7 @@ light:
     broadcast: 192.168.2.255
   - platform: limitlessled
     bridges:
-      - host: 192.168.2.247
+      - host: 192.168.1.136
         groups:
           - number: 1
             name: led_strip_rgb_cct_1
@@ -131,7 +131,7 @@ light:
 
 media_player:
   - platform: denon
-    host: 192.168.2.186
+    host: 192.168.1.131
 
 nest:
   client_id: !secret nest_client_id
